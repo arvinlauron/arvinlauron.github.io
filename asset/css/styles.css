@@ -85,7 +85,17 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 	}
   }
   
-
+  .footer {
+	padding-top: 5rem;
+	padding-bottom: 5rem;	
+	background-color: #2c3e50;
+	color: #fff;
+  }
+  
+  .copyright {
+	background-color: #1a252f;
+  }
+  
 /* gradient */
 
 .gradient {
@@ -94,7 +104,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 			background: linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%);
 			/* overflow: hidden;   */
 }
-
+/* Bubble effect */
 .bg-bubbles {
 	position: absolute;
 	top: 0;
@@ -217,3 +227,5 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 	}
 	
 }   
+
+/* end bubble */
