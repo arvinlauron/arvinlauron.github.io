@@ -60,7 +60,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 	left: 0;
 	transition: all 0.2s ease-in-out;
 	opacity: 0;
-	background-color: rgba(26, 188, 156, 0.9);
+	background-color: rgba(147,32,255, 0.7);
   }
   .portfolio .portfolio-item .portfolio-item-caption:hover {
 	opacity: 1;
@@ -118,6 +118,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 body {
     min-height: 100vh;
 	background: #9320ff;
+	 
 	/* background: -webkit-linear-gradient(top left, #50a3a2 0%, #78cc6d 100%);
 	background: linear-gradient(top bottom right, #50a3a2 0%, #78cc6d 100%); */
     background: linear-gradient(135deg, #8C9EFF, #9320ff, #d09eff) 
