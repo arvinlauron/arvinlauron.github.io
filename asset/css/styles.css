@@ -100,14 +100,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 	background-color: #1a252f;
   }
   
-/* gradient */ 
 
-/* .gradient {
-			background: #50a3a2;
-			background: -webkit-linear-gradient(top left, #50a3a2 0%, #78cc6d 100%);
-			background: linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%);
-			/* overflow: hidden;   */
-} */
+
 /* Bubble effect */
 .bubbles {
     position: absolute;
@@ -116,12 +110,10 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     overflow: hidden
 }
 body {
-    min-height: 100vh;
+  min-height: 100vh;
 	background: #9320ff;
 	 
-	/* background: -webkit-linear-gradient(top left, #50a3a2 0%, #78cc6d 100%);
-	background: linear-gradient(top bottom right, #50a3a2 0%, #78cc6d 100%); */
-    background: linear-gradient(135deg, #8C9EFF, #9320ff, #d09eff) 
+	  background: linear-gradient(135deg, #8C9EFF, #9320ff, #d09eff) 
 }
 
 body::-webkit-scrollbar {
@@ -181,3 +173,4 @@ body::-webkit-scrollbar {
 }
 
 /* end bubble */
+
