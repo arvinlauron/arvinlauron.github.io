@@ -100,21 +100,18 @@ btnBackspace.addEventListener('click', function () {
     displayValElement.innerText = displayVal;
 });
 
-
-
-btnClear.onclick = () => {
+btnClear.addEventListener("click", function () {
     displayVal = '0';
     pendingVal = undefined;
-    evalStringArray = []
+    evalStringArray = [];
     displayValElement.innerHTML = displayVal;
-}
+});
 
-btnDecimal.onclick = () => {
+btnDecimal.addEventListener("click", function(){
     if (!displayVal.includes('.'))
         displayVal += '.';
     displayValElement.innerHTML = displayVal;
-}
-
+});
 
 
 
