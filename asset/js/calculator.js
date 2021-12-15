@@ -91,21 +91,22 @@ for (let i = 0; i < calcOperatorBtns.length; i++) {
     calcOperatorBtns[i].addEventListener('click', performOperation, false)
 }
 
+btnBackspace.addEventListener('click', function () {
+    let lengthOfDisplayVal = displayVal.length;
+    displayVal = displayVal.slice(0, lengthOfDisplayVal - 1);
+
+    if(displayVal === '')
+        displayVal = '0';
+    displayValElement.innerText = displayVal;
+});
+
+
+
 btnClear.onclick = () => {
     displayVal = '0';
     pendingVal = undefined;
     evalStringArray = []
     displayValElement.innerHTML = displayVal;
-}
-
-btnBackspace.onclick = () => {
-    let lengthOfDisplayVal = displayVal.length;
-    displayVal = displayVal.slice(0, lengthOfDisplayVal - 1);
-
-    if (displayVal === ' ')
-        displayVal = '0';
-
-    displayValElement.innerText = displayVal;
 }
 
 btnDecimal.onclick = () => {
