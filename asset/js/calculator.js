@@ -1,14 +1,3 @@
-var btnOne = document.getElementById('one');
-var btnTwo = document.getElementById('two');
-var btnThree = document.getElementById('three');
-var btnFour = document.getElementById('four');
-var btnFive = document.getElementById('five');
-var btnSix = document.getElementById('six');
-var btnSeven = document.getElementById('seven');
-var btnSeven = document.getElementById('eight');
-var btnSeven = document.getElementById('nine');
-var btnSeven = document.getElementById('zero');
-
 var btnDecimal = document.getElementById('Decimal');
 var btnClear = document.getElementById('Clear');
 var btnBackspace = document.getElementById('backspace');
@@ -22,6 +11,7 @@ var calcNumBtns = document.getElementsByClassName('btn-num');
 var calcOperatorBtns = document.getElementsByClassName('btn-operator');
 var calcPercentage = document.getElementById('percent');
 
+
 var updateDisplayVal = (clickObj) => {
     var btnText = clickObj.target.innerText;
 
@@ -30,6 +20,7 @@ var updateDisplayVal = (clickObj) => {
     displayVal += btnText;
     displayValElement.innerText = displayVal;
 }
+
 
 var performOperation = (clickObj) => {
     var operator = clickObj.target.innerText;
@@ -91,6 +82,8 @@ for (let i = 0; i < calcOperatorBtns.length; i++) {
     calcOperatorBtns[i].addEventListener('click', performOperation, false)
 }
 
+
+
 btnBackspace.addEventListener('click', function () {
     let lengthOfDisplayVal = displayVal.length;
     displayVal = displayVal.slice(0, lengthOfDisplayVal - 1);
@@ -112,8 +105,5 @@ btnDecimal.addEventListener("click", function(){
         displayVal += '.';
     displayValElement.innerHTML = displayVal;
 });
-
-
-
 
 
