@@ -71,7 +71,7 @@ var performOperation = (clickObj) => {
             evalStringArray.push(displayVal);
             var evaluation = eval(evalStringArray.join(' '));
             displayVal = evaluation + '';
-            displayValElement.innerText = displayVal;
+            displayValElement.innerText = displayVal.substring(0,12);
             evalStringArray = [];
         default:
             break;
