@@ -10,7 +10,6 @@ var evalStringArray = [];
 var calcNumBtns = document.getElementsByClassName('btn-num');
 var calcOperatorBtns = document.getElementsByClassName('btn-operator');
 var calcPercentage = document.getElementById('percent');
-var arr = []
 
 
 var updateDisplayVal = (clickObj) => {
@@ -64,15 +63,14 @@ var performOperation = (clickObj) => {
 
         case '%':
             displayVal = displayVal / 100;
-            displayValElement.innerText = displayVal;
+            displayValElement.innerText = parseFloat(displayVal).toFixed(2);
             break;
 
         case '=':
             evalStringArray.push(displayVal);
             var evaluation = eval(evalStringArray.join(' '));
             displayVal = evaluation + '';
-            displayValElement.innerText = displayVal.substring(0,12);
-            evalStringArray = [];
+            displayValElement.innerText = displayVal;
         default:
             break;
     }
