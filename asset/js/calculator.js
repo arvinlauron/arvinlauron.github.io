@@ -10,6 +10,7 @@ var evalStringArray = [];
 var calcNumBtns = document.getElementsByClassName('btn-num');
 var calcOperatorBtns = document.getElementsByClassName('btn-operator');
 var calcPercentage = document.getElementById('percent');
+var arr = []
 
 
 var updateDisplayVal = (clickObj) => {
@@ -17,7 +18,10 @@ var updateDisplayVal = (clickObj) => {
 
     if (displayVal === '0')
         displayVal = '';
-    displayVal += btnText;
+        if(displayVal.length<12)
+            displayVal += btnText;
+        else
+            displayVal = btnText;
     displayValElement.innerText = displayVal;
 }
 
