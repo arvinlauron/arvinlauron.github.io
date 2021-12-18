@@ -63,14 +63,16 @@ var performOperation = (clickObj) => {
 
         case '%':
             displayVal = displayVal / 100;
-            displayValElement.innerText = parseFloat(displayVal).toFixed(2);
+            displayValElement.innerHTML = parseFloat(displayVal).toFixed(2);
             break;
 
         case '=':
             evalStringArray.push(displayVal);
             var evaluation = eval(evalStringArray.join(' '));
             displayVal = evaluation + '';
-            displayValElement.innerText = displayVal;
+            evalStringArray = [];
+            displayValElement.innerHTML = displayVal;
+            break;
         default:
             break;
     }
@@ -105,6 +107,7 @@ btnClear.addEventListener("click", function () {
 btnDecimal.addEventListener("click", function(){
     if (!displayVal.includes('.'))
         displayVal += '.';
+        evalStringArray = [];
     displayValElement.innerHTML = displayVal;
 });
 
