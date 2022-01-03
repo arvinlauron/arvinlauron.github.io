@@ -71,7 +71,10 @@ var performOperation = (clickObj) => {
             var evaluation = eval(evalStringArray.join(' '));
             displayVal = evaluation + '';
             evalStringArray = [];
-            displayValElement.innerHTML = displayVal;
+            if(displayVal.length <= 12)
+                displayValElement.innerHTML = displayVal;
+            else
+                displayValElement.innerHTML = parseFloat(displayVal).toExponential(2)
             break;
         default:
             break;
