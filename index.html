@@ -1,616 +1,412 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>- Arvs Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Arvs Profile" name="keywords" />
+    <meta content="Arvs Profile" name="description" />
+  </head>
+  <link href="img/favicon.ico" rel="icon" />
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-<head>
-    <title>Personal Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale = 1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="asset/css/styles.css">
-    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="asset/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-</head>
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">Profile</a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<body>
-
-    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#About">
-                <img src="asset/img/logo.png" width="45" height="45" alt="company logo">A&M
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="main_nav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#About"> About Me </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Gallery"> Gallery </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Services"> Services </a></li>
-                    <li class="nav-item"><a class="nav-link" href="calculator.html"  target="_blank"> Calculator </a></li>
-                </ul>
-            </div> <!-- navbar-collapse.// -->
-        </div> <!-- container-fluid.// -->
-    </nav>
-
-    <div class="container-fluid" id="About">
-        <div class="bubbles">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav ml-auto">
+            <a href="#home" class="nav-item nav-link active">Home</a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            <a href="#experience" class="nav-item nav-link">Experience</a>
+            <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+            <a href="#contact" class="nav-item nav-link">Contact</a>
+          </div>
         </div>
-        <header class="text-white text-center">
-            <div class="container d-flex align-items-center flex-column p-5">
+      </div>
+    </div>
 
-                <img class="rounded-circle p-5" src="asset/img/profile.jpg" alt="Author's Picture" />
-
-                <h1 class="light-bg text-uppercase">Hi! I'm Arvin</h1>
-
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+    <!-- Hero Start -->
+    <div class="hero" id="home">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6">
+            <div class="hero-content">
+              <div class="hero-text">
+                <p>Hi! I'm</p>
+                <h1>Arvin Lauron</h1>
+                <h2></h2>
+                <div class="typed-text">
+                  Web Developer, Apps Developer, Mikrotik Network Engineer, College Instructor
                 </div>
-
-                <p class="masthead-subheading">Professor - Aspiring Web Developer - Dreamer</p>
+              </div>
+              <div class="hero-btn">
+                <a class="btn" href="">Hire Me</a>
+                <a class="btn" href="">Contact Me</a>
+              </div>
             </div>
+          </div>
+          <div class="col-sm-12 col-md-5 d-none d-md-block">
+            <div class="hero-image">
+              <img src="img/hero.png" alt="Hero Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- About Start -->
+    <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="about-img">
+              <img src="img/about.jpg" alt="Image" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-content">
+              <div class="section-header text-left">
+                <p>Learn About Me</p>
+                <h2>Skills</h2>
+              </div>
+              <div class="about-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec pretium mi. Curabitur facilisis ornare velit non
+                  vulputate. Aliquam metus tortor, auctor id gravida
+                </p>
+              </div>
+              <div class="skills">
+                <div class="skill-name">
+                  <p>HTML</p>
+                  <p>95%</p>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-info"
+                    role="progressbar"
+                    style="width: 95%"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div class="skill-name">
+                  <p>CSS</p>
+                  <p>85%</p>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-info"
+                    role="progressbar"
+                    style="width: 85%"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div class="skill-name">
+                  <p>Node js</p>
+                  <p>75%</p>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-info"
+                    role="progressbar"
+                    style="width: 75%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div class="skill-name">
+                  <p>JavaScript</p>
+                  <p>65%</p>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-info"
+                    role="progressbar"
+                    style="width: 65%"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <a class="btn" href="">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+    <!-- Experience Start -->
+    <div class="experience" id="experience">
+      <div class="container">
+        <header
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>My Resume</p>
+          <h2>Working Experience</h2>
         </header>
-
-        <!-- Gallery -->
-        <section class="page-section portfolio" id="Gallery">
-            <div class="container">
-
-                <h2 class="page-section-heading text-center text-uppercase text-white">Gallery</h2>
-
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <!-- Gallery Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="asset/img/canoe.png" alt="Me and daughter on a canoe" />
-                        </div>
-                    </div>
-                    <!-- Gallery Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="asset/img/family.jpg" alt="My family at Quiboloy's Paradise" />
-                        </div>
-                    </div>
-                    <!-- Gallery Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="asset/img/wife.jpg" alt="Me and My Wife at Bohol" />
-                        </div>
-                    </div>
-                    <!-- Gallery Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="asset/img/hongkong.jpg" alt="Hongkong working on Jetassist" />
-                        </div>
-                    </div>
-                    <!-- Gallery Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="asset/img/indo.png"
-                                alt="At Indonesia having a taste of mie goreng" />
-                        </div>
-                    </div>
-                    <!-- Gallery Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="asset/img/mikrotik.jpg"
-                                alt="My first graduate as mikrotik academic trainer" />
-                        </div>
-                    </div>
-                </div>
+        <div class="timeline">
+          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+            <div class="timeline-text">
+              <div class="timeline-date">2011 - 2017</div>
+              <h2>Network & System Administrator</h2>
+              <h4>St. Peter's College of Toril, Davao City</h4>
+              <p>
+                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus
+                erat sagittis non. Ut blandit semper pretium.
+              </p>
             </div>
-        </section>
-        <!-- Services -->
-
-        <section class="page-section text-white mb-0" id="Services">
-            <div class="container">
-
-                <h2 class="page-section-heading text-center text-uppercase text-white">Services</h2>
-
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-6 ms-auto">
-                        <p class="lead text-center icon"><i class="fa fa-code"></i></p>
-                        <h3 class="text-center">Web Development</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis nec eros et pulvinar.
-                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin sed eros massa.
-                            Vestibulum gravida dolor eu ipsum dignissim, nec pretium purus viverra. Phasellus non est
-                            odio. Proin cursus ligula turpis, eget hendrerit massa maximus id. Cras est nisi, varius a
-                            volutpat sed, venenatis et ante. Fusce ut scelerisque lectus. Nulla in sem pellentesque,
-                            tempor augue vel, blandit orci.
-                        </p>
-                    </div>
-                    <div class="col-lg-6 me-auto">
-                        <p class="lead text-center icon"><i class="fas fa-chalkboard-teacher"></i></p>
-                        <h3 class="text-center">Learned Coding</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis nec eros et pulvinar.
-                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin sed eros massa.
-                            Vestibulum gravida dolor eu ipsum dignissim, nec pretium purus viverra. Phasellus non est
-                            odio. Proin cursus ligula turpis, eget hendrerit massa maximus id. Cras est nisi, varius a
-                            volutpat sed, venenatis et ante. Fusce ut scelerisque lectus. Nulla in sem pellentesque,
-                            tempor augue vel, blandit orci.
-                        </p>
-                    </div>
-
-                    <div class="col-lg-6 me-auto">
-                        <p class="lead text-center icon"><i class="fas fa-camera-retro"></i></p>
-                        <h3 class="text-center">Video Editor</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis nec eros et pulvinar.
-                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin sed eros massa.
-                            Vestibulum gravida dolor eu ipsum dignissim, nec pretium purus viverra. Phasellus non est
-                            odio. Proin cursus ligula turpis, eget hendrerit massa maximus id. Cras est nisi, varius a
-                            volutpat sed, venenatis et ante. Fusce ut scelerisque lectus. Nulla in sem pellentesque,
-                            tempor augue vel, blandit orci.
-                        </p>
-                    </div>
-
-                    <div class="col-lg-6 me-auto">
-                        <p class="lead text-center icon"><i class="fas fa-basketball-ball"></i></p>
-                        <h3 class="text-center">Sports Event</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis nec eros et pulvinar.
-                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin sed eros massa.
-                            Vestibulum gravida dolor eu ipsum dignissim, nec pretium purus viverra. Phasellus non est
-                            odio. Proin cursus ligula turpis, eget hendrerit massa maximus id. Cras est nisi, varius a
-                            volutpat sed, venenatis et ante. Fusce ut scelerisque lectus. Nulla in sem pellentesque,
-                            tempor augue vel, blandit orci.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" data-bs-toggle="modal" data-bs-target="#contact">
-                        <i class="far fa-address-card"></i>
-                        Contact
-                    </a>
-                </div>
+          </div>
+          <div
+            class="timeline-item right wow slideInRight"
+            data-wow-delay="0.1s"
+          >
+            <div class="timeline-text">
+              <div class="timeline-date">2017 - 2019</div>
+              <h2>Supervisor</h2>
+              <h4>ShipElectronic, Davao</h4>
+              <p>
+                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus
+                erat sagittis non. Ut blandit semper pretium.
+              </p>
             </div>
-        </section>
-
-
-
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
-            aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                            aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Canoe Time</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="asset/img/canoe.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
-                                        neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
-                                        quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                        itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+            <div class="timeline-text">
+              <div class="timeline-date">2019 - present</div>
+              <h2>Full College Professor</h2>
+              <h4>St. Peter's College of Toril, Davao City</h4>
+              <p>
+                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus
+                erat sagittis non. Ut blandit semper pretium.
+              </p>
             </div>
+          </div>
         </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
-            aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                            aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">My Family</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="asset/img/family.jpg" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
-                                        neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
-                                        quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                        itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
-            aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                            aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Love &#60; 3
-                                    </h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="asset/img/wife.jpg" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos
-                                        quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta,
-                                        eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
-            aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                            aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Jetassist
-                                        project</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="asset/img/hongkong.jpg" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
-                                        neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
-                                        quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                        itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5"
-            aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                            aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Mie Goreng
-                                        Everyone</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="asset/img/indo.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
-                                        neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
-                                        quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                        itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6"
-            aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                            aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">SPCT Mikrotik
-                                        Academy</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="asset/img/mikrotik.jpg" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
-                                        neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
-                                        quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                        itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-
-    <!-- Contact Modal -->
-
-    <div class="portfolio-modal modal fade" id="contact" tabindex="-1" aria-labelledby="portfolioModal6"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-12">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Contact Information
-                                </h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <div class="container">
-
-                                    <form class="row g-3 needs-validation" novalidate>
-                                        <div class="col-md-6">
-                                            <label for="validationCustom01">FirstName</label>
-                                            <input type="text" class="form-control" id="validationCustom01"
-                                                placeholder="First Name" required>
-                                            <div class="invalid-feedback">
-                                                Please provide a valid First Name.
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="validationCustom02">LastName</label>
-                                            <input type="text" class="form-control" id="validationCustom02"
-                                                placeholder="Last Name" required>
-                                            <div class="invalid-feedback">
-                                                Please provide a valid Last Name.
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-12">
-                                            <label for="validationCustom3">Address</label>
-                                            <input type="text" class="form-control" id="validationCustom03"
-                                                placeholder="Address" required>
-                                            <div class="invalid-feedback">
-                                                Please provide an Address.
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <label for="validationCustom04">City</label>
-                                            <input type="text" class="form-control" id="validationCustom04"
-                                                placeholder="City" required>
-                                            <div class="invalid-feedback">
-                                                Please provide a valid city.
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <label for="validationDefault04">Province</label>
-                                            <select class="form-select" id="validationDefault04" required>
-                                                <option selected disabled value="">Choose...</option>
-                                                <option>Davao de Oro</option>
-                                                <option>Davao del Norte</option>
-                                                <option>Davao del Sur</option>
-                                                <option>Davao Occidental</option>
-                                                <option>Davao Oriental</option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                                Please choose a province.
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="validationCustom05">Zip</label>
-                                            <input type="text" class="form-control" id="validationCustom05"
-                                                placeholder="Zip" required>
-                                            <div class="invalid-feedback">
-                                                Please input a zip code.
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="invalidCheck2" required>
-                                                <label class="form-check-label" for="invalidCheck2">
-                                                    Agree to terms and conditions
-                                                </label>
-                                                <div class="invalid-feedback">
-                                                    You must agree to the terms
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 mb-4">
-                                            <button class="btn btn-primary" type="submit">Submit</button>
-                                        </div>
-                                    </form>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Job Experience End -->
+    
+    <!-- Portfolio Start -->
+    <div class="portfolio" id="portfolio">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>My Portfolio</p>
+          <h2>My Excellent Portfolio</h2>
         </div>
+        <div class="row">
+          <div class="col-12">
+            <ul id="portfolio-filter">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-1">My Profile</li>
+              <li data-filter=".filter-2">React</li>
+              <li data-filter=".filter-3">Personal</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row portfolio-container">
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp"
+            data-wow-delay="0.0s"
+          >
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <img src="img/portfolio-1.jpg" alt="Image" />
+              </div>
+              <div class="portfolio-text">
+                <h3>My Profile Website</h3>
+                <a
+                  class="btn"
+                  href="img/portfolio-1.jpg"
+                  data-lightbox="portfolio"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <img src="img/portfolio-2.jpg" alt="Image" />
+              </div>
+              <div class="portfolio-text">
+                <h3>Asset Management App</h3>
+                <a
+                  class="btn"
+                  href="img/portfolio-2.jpg"
+                  data-lightbox="portfolio"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <img src="img/portfolio-3.jpg" alt="Image" />
+              </div>
+              <div class="portfolio-text">
+                <h3>React Todo App</h3>
+                <a
+                  class="btn"
+                  href="img/portfolio-3.jpg"
+                  data-lightbox="portfolio"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp"
+            data-wow-delay="0.6s"
+          >
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <img src="img/portfolio-4.jpg" alt="Image" />
+              </div>
+              <div class="portfolio-text">
+                <h3>JavaScript</h3>
+                <a
+                  class="btn"
+                  href="img/portfolio-4.jpg"
+                  data-lightbox="portfolio"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- Portfolio End -->
 
-
-    <footer class="footer text-center">
+ <!-- Contact Start -->
+ <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+  <div class="container-fluid">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-md-4"></div>
+              <div class="col-md-8">
+                  <div class="contact-form">
+                      <div id="success"></div>
+                      <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                          <div class="control-group">
+                              <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                              <p class="help-block"></p>
+                          </div>
+                          <div class="control-group">
+                              <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                              <p class="help-block"></p>
+                          </div>
+                          <div class="control-group">
+                              <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                              <p class="help-block"></p>
+                          </div>
+                          <div class="control-group">
+                              <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                              <p class="help-block"></p>
+                          </div>
+                          <div>
+                              <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Contact End -->
+    <!-- Footer Start -->
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+      <div class="container-fluid">
         <div class="container">
-            <div class="row">
-                <!-- Footer Location-->
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Location</h4>
-                    <p class="lead mb-0">
-                        <i class="fas fa-address-card"></i> Davao City, Tacunan
-                        <br />
-                        Philippines, 8022
-                    </p>
-
-                </div>
-                <!-- Footer Social Icons-->
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Around the Web</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
-                            class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
-                            class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
-                </div>
+          <div class="footer-info">
+            <h2>Arvin Lauron</h2>
+            <h3>Tacunan, Davao City, Philippines</h3>
+            <div class="footer-menu">
+              <p>+63 925 819 6483</p>
+              <p>arvinglauron@gmail.com</p>
             </div>
+            <div class="footer-social">
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href="https://www.facebook.com/settings?tab=account&section=username"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/in/arvin-lauron-b0b992140"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
         </div>
-
+        <div class="container copyright">
+          <p>
+            &copy; <a href="#">My Profile</a>, All Right Reserved | Designed By
+            <a href="https://htmlcodex.com">HTML Codex</a>
+          </p>
         </div>
-    </footer>
-    <!-- Copyright Section-->
-    <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright &copy; Arvin G. Lauron 2021</small></div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+    <!-- Footer End -->
+    <!-- Back to top button -->
+    <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-            'use strict';
-            window.addEventListener('load', function () {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-    </script>
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+      <div class="loader"></div>
+    </div>
+    <!--javascript-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
