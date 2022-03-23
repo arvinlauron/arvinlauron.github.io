@@ -1031,6 +1031,13 @@ a:focus {
 .footer .copyright p a:hover {
     color: #414141;
 }
+@media (max-width: 700px){
+    .footer .footer-menu p {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0 5px;
+    } 
+}
 
 @media (max-width: 575.98px) {
     .footer .footer-info h2 {
