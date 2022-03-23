@@ -840,7 +840,7 @@ a:focus {
     position: relative;
     width: 100%;
     margin: 45px 0;
-    background: #4123eff2;
+    background: linear-gradient(rgba(67, 37, 239, 0.949), rgba(63, 74, 160, 0.65));
 }
 
 .contact .container-fluid {
@@ -851,7 +851,7 @@ a:focus {
 .contact .contact-form {
     position: relative;
     padding: 90px 0 90px 45px;
-    background: #4123eff2;
+    background: linear-gradient(rgba(67, 37, 239, 0.949), rgba(63, 74, 160, 0.95));
 }
 
 .contact .contact-form input {
@@ -925,7 +925,7 @@ a:focus {
 .footer {
     position: relative;
     margin-top: 45px;
-    background: #4123eff2;
+    background: linear-gradient(rgba(67, 37, 239, 0.949), rgba(63, 74, 160, 0.65));
 }
 
 .footer .container-fluid {
@@ -1025,6 +1025,7 @@ a:focus {
 .footer .copyright p a {
     color: #ffffff;
     font-weight: 600;
+    font-size: 0.5rem;
 }
 
 .footer .copyright p a:hover {
@@ -1044,7 +1045,7 @@ a:focus {
     }
 
     .footer .footer-menu p {
-        font-size: 16px;
+        font-size: 12px;
         line-height: 16px;
         padding: 0 5px;
     }
