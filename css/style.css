@@ -850,8 +850,9 @@ a:focus {
 
 .contact .contact-form {
     position: relative;
-    padding: 90px 0 90px 45px;
-    /* background: linear-gradient(rgba(67, 37, 239, 0.949), rgba(63, 74, 160, 0.95)); */
+    padding: 90px 0 90px 75px;
+    /* background: linear-gradient(rgba(67, 37, 239, 0.949), rgba(63, 74, 160, 0.95));
+    */
 }
 
 .contact .contact-form input {
